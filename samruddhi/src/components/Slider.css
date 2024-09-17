@@ -1,0 +1,40 @@
+.slider-item {
+  height: auto; /* Fixed height */
+  width: 60%; /* Make sure the slider item takes up full width */
+  max-width: 70%; /* Ensure the item does not overflow */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0; /* Light background */
+  margin: 0; /* Adds small margins */
+  border-radius: 8px; /* Smooth rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  box-sizing: border-box;
+}
+
+
+
+.slick-slide {
+  padding: 0 2px; /* Space between slides */
+}
+
+.slick-dots li button:before {
+  color: #333; /* Dots color */
+}
+
+.slick-dots li.slick-active button:before {
+  color: #007bff; /* Active dot color */
+}
+
+/* Responsive design */
+@media (max-width: 1024px) {
+  .slider-item {
+    height: 180px; /* Slightly smaller height for medium screens */
+  }
+}
+
+@media (max-width: 600px) {
+  .slider-item {
+    height: 150px; /* Smaller height for small screens */
+  }
+}
